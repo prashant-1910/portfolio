@@ -1,0 +1,436 @@
+@import 'utility.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    font-family: 'Poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 85%,0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+header nav a{}
+
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+.hero .right span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+section{
+    padding: 5rem 0;
+}
+section .left-about img{
+    width: 350px;
+}
+
+section .right-about h1{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+section .right-about h1 span{
+    color: var(--primary);
+}
+section .right-about h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+section .right-about p{
+    line-height: 2rem;
+    font-family: 'Lato' sans-serif;
+    margin-bottom: 2rem;
+}
+section .social{
+  display: flex;
+}
+section .social a{
+    background: var(--light); 
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section .social img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+section .social a:hover{
+    background: var(--primary);
+}
+
+section.services{
+    background: var(--light);
+}
+
+.section-heading{
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p {
+    margin-bottom: 8rem;
+    text-align: center;
+    color: var(--ternary);
+    font-family: 'Lato';
+}
+
+section .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    transition: all .3s ease;
+}
+
+section .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+}
+section .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section .card h2:hover,
+section .card p:hover{
+    color: var(--pure);
+}
+
+section .card img{
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 1.2rem;
+}
+
+section .card p{
+    font-weight: 100;
+    color: var(--ternary);
+    line-height: 2rem;
+}
+section.freelancer{
+    text-align: center;
+    color: var(--pure);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    clip-path: polygon(0 0 ,100% 0 ,100% 100% ,75% 70%,0 100%);
+    padding-bottom: 14rem;
+}
+
+section h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+section p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Lato',sans-serif;
+}
+
+section.review .slider .slide img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+section.review .slider .slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+section.review .slider .slide p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+section.review .slider .slide span{
+    font-size: 1rem;
+}
+section.review .slider-dots{
+margin-top: 3rem;
+}
+section.review .slider-dots .dots{
+    list-style-type: none;
+    display: flex !important;
+    justify-content: center;
+}
+
+section.review .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    outline: none;
+    border: none;
+    margin-right: 0.3rem;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+section.review .dots li.slick-active button{
+    background:var(--primary);
+    width: 20px;
+}
+
+section.work .card-wrapper-work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+section.work .card-work{
+    position: relative;
+    height: 250px;
+}
+section.work .card-work img{
+    height: 100%;
+    width: 100%;
+}
+
+section.work .card-work .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .7s ease;
+    color: var(--light);
+    opacity: 0;
+}
+
+section.work .card-work .overlay a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+section.work .card-work:hover .overlay{
+    opacity: 1;
+}
+
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 92%,0 100%);
+    padding-bottom: 12rem;
+}
+
+section.blog .section-heading{
+    color: var(--pure);
+}
+section.blog .blog-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.blog .blog-card{
+    background: var(--pure);
+}
+section.blog .blog-card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+section.blog .blog-card-content a h1{
+    color: var(--dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+section.blog .blog-card-content a h1:hover{
+    color: var(--primary);
+}
+section.blog .blog-card-content a{
+    text-decoration: none;
+}
+section.blog .blog-card-content span{
+    font-size: 0.8rem;
+    color: var(--ternary);
+}
+section.blog .blog-card-content p{
+    margin: 1.5rem 0;
+    font-family: 'Lato';
+    color: var(--ternary);
+}
+section.blog .blog-card-content a.read-more{
+    font-size: 1rem;
+}
+
+section.blog .blog-card-content a.read-more:hover{
+    color: var(--primary);
+}
+
+section.blog .img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section.contact .contact-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+section.contact .contact-card-wrapper .contact-card{
+    text-align: center;
+}
+section.contact .contact-card-wrapper .contact-card img{
+    margin-bottom: 2rem;
+}
+section.contact .contact-card-wrapper .contact-card h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .contact-card-wrapper .contact-card h6{
+    color: var(--ternary);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section.contact .input-wrap{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .input-wrap-2 + div{
+    text-align: center;
+    margin-top: 1rem;
+}
+section.contact input,
+section.contact textarea{
+    margin-bottom: 1.5rem;
+    padding: 0.4rem;
+    border: 1px solid var(--light);
+    font-size: 1rem;
+}
+section.contact input:focus,
+section.contact input:active,
+section.contact textarea:focus,
+section.contact textarea:active{
+    outline: none;
+}
+
+footer{
+    background: var(--dark);
+    padding: 5rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.1rem;
+}
+footer .logo{
+    margin-bottom: 3rem;
+    width: 150px;
+    /* height: 150px; */
+}
+footer .social{
+    margin-bottom: 3rem;
+    background: var(--light);
+    border-radius: 8px;
+    margin-right: -1rem;
+}
+footer .social + p{
+    color: var(--ternary);
+}
